@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Latitude Landing Page</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Comparison Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- bring in bootstrap stylesheet  -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
 
@@ -24,7 +25,6 @@
           href="index.html"
           >Latitude</a
         >
-
         <button
           class="navbar-toggler border border-white"
           type="button"
@@ -46,9 +46,10 @@
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                style="color: #6d8092;"
               >
-                Plots</a
-              >
+                Plots
+              </a>
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
@@ -73,41 +74,15 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 col-md-12">
-          <!-- Left box  -->
+        <div>
           <div class="box">
-            <h3 class="title">Summary: Latitude vs. " "</h3>
+            <h3 class="title">Comparison: Latitude vs X</h3>
             <hr />
-            <img
-              src="Resources/assets/images/Fig1.png"
-              class="visualization rounded float-left"
-              alt="Max Temperature Graph"
-            />
-            <p>
-              The purpose of this project was to analyze how weather changes as
-              you get closer to the equator. To accomplish this analysis, we
-              first pulled data from the OpenWeatherMap API to assemble a
-              dataset on over 500 cities.
-            </p>
-            <p>
-              After assembling the dataset, we used Matplotlib to plot various
-              aspects of the weather vs. latitude. Factors we looked at
-              included: temperature, cloudiness, wind speed, and humidity. This
-              site provides the source data and visualizations created as part
-              of the analysis, as well as explanations and descriptions of any
-              trends and correlations witnessed.
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-5 col-md-12">
-          <!-- Right Box -->
-          <div class="box">
-            <h5 class="title">Visualizations</h5>
-            <hr />
-
-            <div class="container">
-              <div class="row" style="padding-bottom: 30px;">
-                <div class="col-6">
+            <p>Click any plot to get an in-depth analysis.</p>
+            <div class="container" style="padding-bottom: 40px;">
+              <div class="row">
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs. Max Temperature</div>
                   <a href="max_temperature.html">
                     <img
                       class="panel"
@@ -116,7 +91,8 @@
                     />
                   </a>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs. Humidity</div>
                   <a href="humidity.html">
                     <img
                       class="panel"
@@ -127,8 +103,9 @@
                 </div>
               </div>
 
-              <div class="row" style="padding-bottom: 30px;">
-                <div class="col-6">
+              <div class="row">
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs. Cloudiness</div>
                   <a href="cloudiness.html">
                     <img
                       class="panel"
@@ -137,7 +114,8 @@
                     />
                   </a>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6" style="padding: 30px;">
+                  <div class="title">vs. Wind Speed</div>
                   <a href="wind_speed.html">
                     <img
                       class="panel"
